@@ -25,6 +25,8 @@ input::-webkit-inner-spin-button {
 }
 header{
     display: flex;
+    position: sticky;
+    top: 0px;
     align-items: center;
     font-family: 'Carter One', sans-serif;
     background-color: var(--primary-color);
@@ -316,6 +318,11 @@ nav{
     .options-menu{
         display: flex;
         flex-direction: column;
+        position: fixed;
+        top: 60px;
+        left: 10px;
+        background-color: var(--hover-color);
+        border-radius: 100px;
     }
     .options{
         position: static;
@@ -325,8 +332,9 @@ nav{
         height: 0px;
         overflow: hidden;
         transition: all 0.2s;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
+        border-radius: 10px;
+        position: relative;
+        top: 5px;
     }
     .dropdown{
         justify-content: center;
